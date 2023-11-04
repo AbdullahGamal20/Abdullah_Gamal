@@ -1,78 +1,61 @@
-.star_section{
+/* CSS for the starry background animation */
+
+.star_section {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: #000200;
+  overflow: hidden; /* Hide overflow to prevent unwanted scrollbars */
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
-.star{
+.star {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  animation: animate 10s ease-in-out infinite , backgroundmove 18s infinite;
+  animation: animate 10s ease-in-out infinite, backgroundmove 18s infinite;
+  transform: translate3d(0, 0, 0); /* CSS hardware acceleration */
 }
-.star.star1{
-  animation-delay:0s ;
+
+.star.star1 {
+  animation-delay: 0s;
   background: url("../../assets/star1.png");
 }
 
-.star.star2{
-  animation-delay: -1s ;
+.star.star2 {
+  animation-delay: -1s;
   background: url("../../assets/star2.png");
 }
 
-.star.star3{
-  animation-delay:-2s ;
+.star.star3 {
+  animation-delay: -2s;
   background: url("../../assets/star3.png");
 }
-.star.star4{
-  animation-delay:-3s ;
-  background: url("../../assets/star4.png");
-}
 
-.star.star5{
-  animation-delay:-4s ;
-  background: url("../../assets/star5.png");
-}
+/* Add more star classes as needed */
 
-  .star.star6{
-  animation-delay:-5s ;
-  background: url("../../assets/star6.png");
-}
-
-.star.star7{
-  animation-delay:-6s ;
-  background: url("../../assets/star7.png");
-}
-
-.star.star8{
-  animation-delay:-7s ;
-  background: url("../../assets/star8.png");
-}
-
-@keyframes animate{
-  0%,20%,40%,60%,80% , 100%{
+@keyframes animate {
+  0%, 20%, 40%, 60%, 80%, 100% {
     opacity: 0;
   }
-  10%,30%,50%,70%,90%{
+  10%, 30%, 50%, 70%, 90% {
     opacity: .6;
   }
 }
 
-@keyframes backgroundmove{
-  0%{
-    transform: scale(.5);
+@keyframes backgroundmove {
+  0% {
+    transform: scale(.6);
   }
-  50%{
-    transform: scale(0.7);
+  50% {
+    transform: scale(0.8);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
