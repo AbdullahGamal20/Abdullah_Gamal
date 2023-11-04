@@ -54,8 +54,12 @@ function Services() {
               <h3 className="services_title">{title}</h3>
               <p className="services_description">{description}</p>
 
-              <a href="#pricing" className="link">
-                See Pricing
+              <a
+                href="https://www.linkedin.com/in/abdullah-gamal-mohamed/"
+                target="_blank"
+                className="link"
+              >
+                Request Service
                 <FaArrowRight className="link_icon"></FaArrowRight>
               </a>
               <img src={shapeTwo} alt="Shape" className="shape c_shape" />
