@@ -1,24 +1,18 @@
 .services{
   background-image: var(--second-gradient);
+  position: relative;
+  padding-top: 150px;
+
 }
 
+
+
 .services_item{
-  margin-bottom: 52px;
+  margin-bottom: 40px;
   position: relative;
 }
 
-.services_item::before{
-  content: '';
-  width: 0;
-  height: 0;
-  background-color: rgb(79, 79, 80);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transition: all .6s ease-in-out;
-  color: #fff;
-  z-index: -1;
-}
+
 
 .services_item:hover.services_item::before{
   left: 0;
@@ -55,3 +49,33 @@
 .swiper-pagination-bullet{
   background-color: var(--primary-color);
 }
+
+
+.control_btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: 20%;
+}
+
+.control_btns div{
+  padding: 10px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+  text-align: center;
+  width:50px;
+  cursor: pointer;
+}
+
+.control_btns div svg{
+  color: var(--primary-color);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+

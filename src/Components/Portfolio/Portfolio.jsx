@@ -4,6 +4,8 @@ import Items from "./Items";
 import { projects } from "../../Data";
 import { AnimatePresence } from "framer-motion";
 import shapeOne from "../../assets/shape-1.png";
+import Stars from "../Part/Stars";
+
 import "./portfolio.css";
 
 const allNavList = [
@@ -29,6 +31,7 @@ function Portfolio() {
 
   return (
     <section className="portfolio section">
+      <Stars />
       <h2 className="section_title text-cs">Portfolio</h2>
       <p className="section_subtitle">
         My <span>Cases</span>

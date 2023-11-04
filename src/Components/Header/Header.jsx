@@ -4,8 +4,9 @@ import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 import shapeOne from "../../assets/shape-1.png";
 import { Link, animateScroll } from "react-scroll";
-
+import logo from "../../assets/abdo_logo.png";
 import "./header.css";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -49,7 +50,8 @@ function Header() {
     <header className={`${scrollNav ? "scroll-header" : ""} header`}>
       <nav className="nav">
         <Link to="/" onClick={scrollTop} className="nav_logo text-cs">
-          A-G
+          <img src={logo} alt="LOGO" className="logo" />
+          <span>Gamal</span>
         </Link>
 
         <div className={`${showMenu ? "nav_menu show-menu" : "nav_menu"}`}>
@@ -58,18 +60,13 @@ function Header() {
               {links.map(({ name, path }, index) => {
                 return (
                   <li className="nav_item" key={index}>
-                    <Link
+                    <NavLink
                       to={path}
-                      spy={true}
-                      hashSpy={true}
-                      smooth={true}
-                      offset={-150}
-                      duration={500}
                       className="nav_link text-cs"
                       onClick={() => setShowMenu(!showMenu)}
                     >
                       {name}
-                    </Link>
+                    </NavLink>
                   </li>
                 );
               })}

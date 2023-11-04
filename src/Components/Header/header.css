@@ -28,25 +28,28 @@
   margin-inline: 30px;
 }
 
+
 .nav_logo{
-  color: var(--primary-color);
-  background-color: transparent;
-  font-size: var(--h2-font-size);
-  font-weight: 700;
-  letter-spacing: 2px;
-  border: 1px solid var(--primary-color);
-  box-shadow: var(--shadow);
-  border-radius: 50%;
-  padding: 12px;
-  transition: all 0.3s var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+
 }
 
-.nav_logo:hover{
+.nav_logo span{
   color: var(--title-color);
-  background-color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-left: -15px;
 }
 
+.logo{
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid var(--primary-color); */
+}
 .nav_menu{
   position: fixed;
   top: 0;

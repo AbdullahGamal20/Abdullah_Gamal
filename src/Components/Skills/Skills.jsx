@@ -1,11 +1,20 @@
 import React from "react";
 import shapeOne from "../../assets/shape-1.png";
 import { skills } from "../../Data";
+import { motion } from "framer-motion";
 import "./skills.css";
 
 function Skills() {
   return (
-    <section className="skills section " id="skills">
+    <motion.section
+      initial={{ x: "-100%", opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="skills section "
+    >
+      <div className="star star1"></div>
+      <div className="star star2"></div>
+
       <h2 className="section_title text-cs">Professional Skills </h2>
       <p className="section_subtitle">
         My <span>Talent</span>
@@ -43,7 +52,7 @@ function Skills() {
       <div className="section_bg_wrapper">
         <span className="bg_title">Skills </span>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

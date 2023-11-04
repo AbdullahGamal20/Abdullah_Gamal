@@ -1,6 +1,7 @@
 .home {
   background-image: var(--first-gradient);
-  padding-bottom: 180px;
+  padding-bottom: 120px;
+  padding-top: 60px;
 }
 
 .home,
@@ -46,8 +47,8 @@
 .home_title {
   color: #fff;
   font-size: var(--biggest-font-size);
-  text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%),
-    2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px rgb(0 0 0 /20%);
+  text-shadow: 5px 2px 3px rgba(119, 119, 119, .3);
+
   line-height: 1.2;
   margin-top: 15px;
 }
@@ -104,16 +105,18 @@
   z-index: 1;
   background-image: url('../../assets/me1.jpg');
   background-repeat: no-repeat;
-  /* background-position:calc(55% + 60px); */
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 8px var(--primary-color);
   order: 1;
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   animation: profile_animate 8s ease-in-out infinite 1s ;
   margin: 0 auto;
+  overflow: hidden;
 }
+
+
 
 @keyframes profile_animate{
   0%{

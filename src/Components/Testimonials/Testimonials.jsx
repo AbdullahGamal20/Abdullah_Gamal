@@ -7,12 +7,13 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import shapeTwo from "../../assets/shape-2.png";
 import shapeOne from "../../assets/shape-1.png";
 import testimonialIcon from "../../assets/testimonials-icon.svg";
-
+import Stars from "../Part/Stars";
 import "./testimonials.css";
 
 function Testimonials() {
   return (
-    <section className="testimonials section" id="testimonials">
+    <section className="testimonials section">
+      <Stars />
       <h2 className="section_title text-cs">Testimonials</h2>
       <p className="section_subtitle">
         My <span>Clients Say</span>

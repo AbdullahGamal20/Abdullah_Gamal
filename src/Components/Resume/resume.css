@@ -1,5 +1,7 @@
 .resume{
   background-image: var(--second-gradient);
+  padding-top: 50px;
+  overflow: hidden;
 }
 
 .resume_container{

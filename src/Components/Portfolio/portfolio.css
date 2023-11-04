@@ -1,5 +1,6 @@
 .portfolio{
   background-image: var(--first-gradient);
+  padding-top: 50px;
 }
 
 .portfolio_list{

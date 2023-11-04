@@ -2,16 +2,23 @@ import React from "react";
 import profileImg from "../../assets/me.png";
 import shapeOne from "../../assets/shape-1.png";
 import shapeTwo from "../../assets/shape-2.png";
-
 import { FaLinkedinIn, FaGithub, FaFacebook } from "react-icons/fa";
 import CV from "../../assets/Abdullah_CV.pdf";
+import Stars from "../Part/Stars";
+import { motion } from "framer-motion";
 import "./home.css";
 
 function Home() {
   return (
     <section className="home" id="home">
+      <Stars />
       <div className="home_wrapper">
-        <div className="home_container container">
+        <motion.div
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: "0%", opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="home_container container"
+        >
           <p className="home_subtitle">
             Hello, <span>My Name Is </span>
           </p>
@@ -48,8 +55,6 @@ function Home() {
               </span>
             </p>
             <img src={shapeOne} alt="Image" className="shape shape_1" />
-            {/* <img src={shapeTwo} alt="Image" className="shape shape_2" />
-            <img src={shapeTwo} alt="Image" className="shape shape_3" /> */}
           </div>
 
           <p className="home_text">
@@ -87,11 +92,11 @@ function Home() {
             <a download="" href={CV} className="btn text-cs">
               Download CV
             </a>
-            <a href="#skills" className="hero_link text-cs">
+            <a href="skills" className="hero_link text-cs">
               My Skills
             </a>
           </div>
-        </div>
+        </motion.div>
 
         <div className="section_deco deco_left home_deco">
           <img src={shapeOne} alt="Image" className="shape" />

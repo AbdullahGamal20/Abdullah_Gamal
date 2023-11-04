@@ -28,7 +28,8 @@
   }
 
   .home{
-    padding-top: 140px;
+    padding-top: 160px !important;
+
   }
 
   .home_subtitle , .home_title , .home_job , .home_text{
@@ -77,6 +78,10 @@
     justify-self: start ;
     font-size: 12px;
   }
+
+  .search_box{
+    width: 92% !important;
+  }
 }
 
 @media screen and (max-width:992px){
@@ -95,6 +100,10 @@
   --tiny-font-size:12px !important;
   }
 
+  .home{
+    padding-top: 150px !important;
+  }
+
   .container{
     max-width: 740px !important;
   }
@@ -111,6 +120,25 @@
     transform: translateX(-50%) !important;
     width: 2px !important;
     height: 40px !important;
+  }
+
+  .about{
+    padding: 150px !important;
+    height: 180vh !important;
+  }
+
+  .about_container{
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .about_img{
+    margin: 0 auto;
+  }
+
+  .about_details{
+    margin-top: 50px;
+    text-align: center;
   }
 
   .skills_container , 
@@ -180,6 +208,10 @@
     row-gap: 18px !important;
   }
 
+  .search_box{
+    width: 100% !important;
+  }
+
   .footer_copyright:nth-child(2),
   .footer_copyright:last-child{
     justify-self: center !important;
@@ -187,6 +219,9 @@
 }
 
 @media screen and (max-width:768px){
+  .home{
+    padding-top: 150px !important;
+  }
   .header{
     padding: 24px 12px !important;
   }
@@ -243,24 +278,48 @@
   .contact_container{
     grid-template-columns: 1fr !important;
   }
+  .about{
+    height: 190vh !important;
+    background-position: calc(-200px);
+  }
 
   .portfolio_list{
     column-gap: 24px !important;  
   }
 
+  .footer_container{
+    text-align: center;
+  }
+
   .portfolio_list_item::before{
     bottom: -8px !important;
+  }
+  .about_title,
+  .about_subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about_title{
+    gap: 8px;
   }
 }
 
 
 @media screen and (max-width:576px){
+  .home{
+    padding-top: 150px !important;
+  }
   .show-menu{
     width: 100% !important;
   }
 
   .nav_btns{
     column-gap: 24px !important;
+  }
+
+  .nav_logo{
+    margin-left: -35px !important;
   }
 
   .home_img-wrapper{
@@ -301,6 +360,11 @@
     flex-direction: column !important;
     align-items: flex-start !important;
     row-gap: 4px !important;
+  }
+
+  .about{
+    height: 170vh !important;
+    background-position: calc(-200px);
   }
 }
 

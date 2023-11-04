@@ -7,7 +7,8 @@ import {
 } from "react-icons/fa";
 import shapeOne from "../../assets/shape-1.png";
 import axios from "axios";
-
+import { motion } from "framer-motion";
+import Stars from "../Part/Stars";
 import "./contact.css";
 
 function Contact() {
@@ -39,13 +40,19 @@ function Contact() {
   };
 
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section">
+      <Stars />
       <h2 className="section_title text-cs">Contact Me</h2>
       <p className="section_subtitle">
         Let's <span>Talk About Ideas </span>
       </p>
 
-      <div className="contact_container container grid">
+      <motion.div
+        initial={{ y: "100%", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="contact_container container grid"
+      >
         <div className="contact_content">
           <div className="contact_card">
             <span className="contact_card_icon">
@@ -141,7 +148,7 @@ function Contact() {
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
 
       <div className="section_deco deco_left">
         <img src={shapeOne} alt="Image" className="shape" />

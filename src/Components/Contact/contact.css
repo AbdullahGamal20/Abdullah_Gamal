@@ -1,6 +1,9 @@
 .contact{
   background-image: var(--second-gradient);
+  padding-top: 150px;
+
 }
+
 
 .contact_container{
   grid-template-columns: 5fr 7fr;

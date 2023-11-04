@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { services } from "../../Data";
-import { FaArrowRight } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
+import { motion } from "framer-motion";
 import shapeTwo from "../../assets/shape-2.png";
 import shapeOne from "../../assets/shape-1.png";
 import "./services.css";
+import Stars from "../Part/Stars";
 
 function Services() {
   return (
-    <section className="services section" id="services">
+    <motion.section
+      initial={{ y: "-100%" }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1.5 }}
+      className="services section"
+    >
+      <Stars />
       <h2 className="section_title text-cs">What I Do</h2>
       <p className="section_subtitle">
         My <span>Services</span>
@@ -63,7 +71,7 @@ function Services() {
       <div className="section_bg_wrapper">
         <span className="bg_title">Services </span>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

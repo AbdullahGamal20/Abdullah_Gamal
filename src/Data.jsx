@@ -21,39 +21,24 @@ const link6 = "https://js-website-omega.vercel.app/";
 export const links = [
   {
     name: "Home",
-    path: "home",
+    path: "/",
+  },
+  {
+    name: "About Me",
+    path: "/about",
   },
   {
     name: "Services",
-    path: "services",
+    path: "/services",
   },
   {
     name: "Skills",
-    path: "skills",
+    path: "/skills",
   },
+
   {
-    name: "Works",
-    path: "portfolio",
-  },
-  {
-    name: "Resume",
-    path: "resume",
-  },
-  {
-    name: "Testimonials",
-    path: "testimonials",
-  },
-  {
-    name: "Pricing",
-    path: "pricing",
-  },
-  {
-    name: "Blog",
-    path: "blog",
-  },
-  {
-    name: "Contact",
-    path: "contact",
+    name: "Contact Me",
+    path: "/contact",
   },
 ];
 
@@ -287,6 +272,33 @@ export const cv = [
     title: "Redux ",
     subtitle: "Online Course",
     date: "APRIL 2023 - MAY 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    category: "experience",
+  },
+  {
+    id: 7,
+    title: "Git & GitHup",
+    subtitle: "Online Course",
+    date: "MAY 2023 - Jul 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    category: "education",
+  },
+  {
+    id: 8,
+    title: "Tailwind",
+    subtitle: "Online Course",
+    date: "Aug 2023 - SEP 2023",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    category: "education",
+  },
+  {
+    id: 9,
+    title: "Python",
+    subtitle: "Online Course",
+    date: "Aug 2022 - SEP 2022",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     category: "experience",

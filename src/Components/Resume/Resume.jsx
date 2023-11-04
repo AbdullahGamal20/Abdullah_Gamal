@@ -3,10 +3,11 @@ import { cv } from "../../Data";
 import Card from "./Card";
 import shapeOne from "../../assets/shape-1.png";
 import "./resume.css";
-
+import Stars from "../Part/Stars";
 function Resume() {
   return (
-    <section className="resume section" id="resume">
+    <section className="resume section">
+      <Stars />
       <h2 className="section_title text-cs">Resume</h2>
       <p className="section_subtitle">
         My <span>Story</span>
