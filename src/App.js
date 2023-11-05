@@ -10,6 +10,7 @@ import HomeLayout from "./Components/Layout/HomeLayout";
 import AboutLayout from "./Components/Layout/AboutLayout";
 
 import PreLoader from "./Components/Loader/PreLoader";
+import Cursor from "./Components/Cursor/Cursor";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <main className="main">
         <BrowserRouter>
           <PreLoader />
+          <Cursor />
           <Header />
           <Routes>
             <Route path="/" element={<HomeLayout />} />

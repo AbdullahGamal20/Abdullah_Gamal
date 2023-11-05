@@ -98,6 +98,7 @@ button , input , body{
 body{
   color: var(--text-color);
   background-color: var(--bg-color);
+  cursor: none;
 }
 
 body.no-scroll{

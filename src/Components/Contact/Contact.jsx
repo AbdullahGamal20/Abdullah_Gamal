@@ -9,6 +9,9 @@ import shapeOne from "../../assets/shape-1.png";
 import axios from "axios";
 import { motion } from "framer-motion";
 import Stars from "../Part/Stars";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import "./contact.css";
 
 function Contact() {
@@ -18,6 +21,12 @@ function Contact() {
     subject: "",
     message: "",
   });
+
+  const notify = (type, msg) => {
+    toast[type](msg, { position: toast.POSITION.TOP_RIGHT });
+  };
+
+  const [sent, setSent] = useState(null);
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -34,8 +43,14 @@ function Contact() {
         form
       )
       .then((response) => {
-        console.log(response);
-        setForm({ name: "", email: "", subject: "", message: "" });
+        if (response.status === 200) {
+          setForm({ name: "", email: "", subject: "", message: "" });
+          notify("success", "Message Was Sent Successfully");
+          setSent(true);
+        }
+      })
+      .catch((e) => {
+        setSent(false);
       });
   };
 
@@ -98,6 +113,7 @@ function Contact() {
                 name="name"
                 onChange={handleChange}
                 value={form.name}
+                required
                 className="contact_form_input"
               />
             </div>
@@ -111,6 +127,7 @@ function Contact() {
                 name="email"
                 onChange={handleChange}
                 value={form.email}
+                required
                 className="contact_form_input"
               />
             </div>
@@ -125,6 +142,7 @@ function Contact() {
               name="subject"
               onChange={handleChange}
               value={form.subject}
+              required
               className="contact_form_input"
             />
           </div>
@@ -137,15 +155,18 @@ function Contact() {
               name="message"
               onChange={handleChange}
               value={form.message}
+              required
               className="contact_form_input"
             ></textarea>
           </div>
 
           <div className="contact_submit">
             <p>* Accept the terms conditions.</p>
+
             <button type="submit" className="btn text-cs">
               Send Message
             </button>
+            {sent && <ToastContainer />}
           </div>
         </form>
       </motion.div>

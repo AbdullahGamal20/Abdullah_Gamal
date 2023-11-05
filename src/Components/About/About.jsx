@@ -65,7 +65,7 @@ function About() {
                 href="https://www.linkedin.com/in/abdullah-gamal-mohamed/"
                 target="_blank"
               >
-                Contact Me Now{" "}
+                Start Conversation
               </a>
             </button>
           </div>

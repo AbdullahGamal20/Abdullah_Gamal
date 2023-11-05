@@ -363,8 +363,11 @@
   }
 
   .about{
-    height: 170vh !important;
+    height: 165vh !important;
     background-position: calc(-200px);
+  }
+  .about_btn{
+    margin-top: 40px !important;
   }
 }
 
