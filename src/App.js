@@ -8,7 +8,6 @@ import Layout from "./Components/Layout/ServicesLayout";
 import SkillsLayout from "./Components/Layout/SkillsLayout";
 import HomeLayout from "./Components/Layout/HomeLayout";
 import AboutLayout from "./Components/Layout/AboutLayout";
-
 import PreLoader from "./Components/Loader/PreLoader";
 import Cursor from "./Components/Cursor/Cursor";
 

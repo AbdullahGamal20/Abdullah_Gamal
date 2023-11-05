@@ -1,7 +1,7 @@
 .cursor-dot{
   width: 10px;
   height: 10px;
-  background-color: var(--primary-color);
+  background-color: var(--border-color);
 }
 
 .cursor-outline{
