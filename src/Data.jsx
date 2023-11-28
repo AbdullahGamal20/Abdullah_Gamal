@@ -94,7 +94,7 @@ export const skills = [
     name: "HTML",
     percentage: 99,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "a standard markup language used to structure and present webpages. It encompasses elements for content, styling, and linking.",
   },
 
   {
@@ -102,7 +102,7 @@ export const skills = [
     name: "CSS",
     percentage: 99,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "style sheet language that gives webpages their visual appeal, controlling layout, colors, fonts, and animations.",
   },
 
   {
@@ -110,7 +110,7 @@ export const skills = [
     name: "JavaScript",
     percentage: 95,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " programming language used for web development. It enhances interactivity, handles events, and manipulates website content.",
   },
 
   {
@@ -118,7 +118,7 @@ export const skills = [
     name: "Bootstrap",
     percentage: 95,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "popular framework for building responsive and mobile-first websites. It provides pre-designed components and a grid system",
   },
 
   {
@@ -126,7 +126,7 @@ export const skills = [
     name: "React JS",
     percentage: 95,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " a JavaScript library used for building user interfaces. It allows for efficient rendering and component reusability",
   },
 
   {
@@ -134,28 +134,21 @@ export const skills = [
     name: "Redux & ReduxToolKit ",
     percentage: 80,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "a predictable state container for JavaScript apps, commonly used with React, allowing for centralized state management",
   },
   {
     id: 7,
     name: "Git & GitHup",
     percentage: 95,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Git is a distributed version control system that enables tracking changes and collaboration, while GitHub serves as a hosting platform.",
   },
   {
     id: 8,
     name: "Tailwind",
     percentage: 90,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    id: 9,
-    name: "Python",
-    percentage: 80,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " a utility-first CSS framework that streamlines web development by providing pre-built classes for rapid styling.",
   },
 ];
 
@@ -167,7 +160,7 @@ export const projects = [
     title: "Real Estate",
     web_link: link1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      " a digital platform offering property listings, search tools, and resources for buyers, sellers, and investors.",
   },
   {
     id: 2,
@@ -176,7 +169,7 @@ export const projects = [
     title: "Car Rental",
     web_link: link2,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "enables users to easily find, compare, and book rental cars for personal or business travel",
   },
   {
     id: 3,
@@ -185,7 +178,7 @@ export const projects = [
     title: "Fitness Club",
     web_link: link3,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "offers information on memberships, class schedules, personal training, and a community for fitness enthusiasts.",
   },
   {
     id: 4,
@@ -194,7 +187,7 @@ export const projects = [
     title: "Traveling",
     web_link: link4,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "provides travel bookings, deals, destination guides, and a platform for travelers to share their experiences.",
   },
   {
     id: 5,
@@ -203,7 +196,7 @@ export const projects = [
     title: "Educational",
     web_link: link5,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "An Educational website offers a vast range of courses, resources, interactive learning materials, and a platform for knowledge sharing.",
   },
   {
     id: 6,
@@ -212,7 +205,7 @@ export const projects = [
     title: "Agency Site",
     web_link: link6,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+      "An agency website showcases their services, expertise, portfolio, and contact information to attract potential clients .",
   },
 ];
 
@@ -223,7 +216,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "FEB 2022 - March 2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "a standard markup language used to structure and present webpages. It encompasses elements for content, styling, and linking.",
     category: "education",
   },
 
@@ -233,7 +226,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "APRIL 2022 - JUl 2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "style sheet language that gives webpages their visual appeal, controlling layout, colors, fonts, and animations.",
     category: "education",
   },
 
@@ -243,7 +236,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "AUG 2022 - NOV 2022",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " programming language used for web development. It enhances interactivity, handles events, and manipulates website content.",
     category: "education",
   },
 
@@ -253,7 +246,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "JAN 2023 - FEB 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "popular framework for building responsive and mobile-first websites. It provides pre-designed components and a grid system",
     category: "experience",
   },
 
@@ -263,7 +256,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "FEB 2023 - APRIL 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " a JavaScript library used for building user interfaces. It allows for efficient rendering and component reusability",
     category: "experience",
   },
 
@@ -273,7 +266,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "APRIL 2023 - MAY 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "a predictable state container for JavaScript apps, commonly used with React, allowing for centralized state management",
     category: "experience",
   },
   {
@@ -282,7 +275,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "MAY 2023 - Jul 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Git is a distributed version control system that enables tracking changes and collaboration, while GitHub serves as a hosting platform.",
     category: "education",
   },
   {
@@ -291,16 +284,7 @@ export const cv = [
     subtitle: "Online Course",
     date: "Aug 2023 - SEP 2023",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    category: "education",
-  },
-  {
-    id: 9,
-    title: "Python",
-    subtitle: "Online Course",
-    date: "Aug 2022 - SEP 2022",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      " a utility-first CSS framework that streamlines web development by providing pre-built classes for rapid styling.",
     category: "experience",
   },
 ];
